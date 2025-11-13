@@ -49,9 +49,6 @@ install -m 0755 -vp %{gobuilddir}/bin/* %{buildroot}%{_bindir}/
 %files -f %{go_vendor_license_filelist}
 %license vendor/modules.txt
 %doc docs README.md RELEASE.md SECURITY.md SHA256SUM.md requirements-lint.txt
-%doc actions/installer/README.md cli/experimental/service/README.md
-%doc experimental/maven-plugin/README.md
-%{_bindir}/service
 %{_bindir}/slsa-verifier
 
 
