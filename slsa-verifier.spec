@@ -35,7 +35,7 @@ Verify provenance from SLSA compliant builders.
 
 %build
 %global gomodulesmode GO111MODULE=on
-%gobuild -o %{gobuilddir}/bin/slsa-verifier %{goipath}/cli/slsa-verifier
+%gobuild -o %{gobuilddir}/bin/slsa-verifier %{goipath}/v2/cli/slsa-verifier
 
 %install
 %go_vendor_license_install -c %{S:2}
