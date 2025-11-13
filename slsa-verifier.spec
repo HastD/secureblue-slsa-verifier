@@ -44,7 +44,7 @@ install -m 0755 -vp %{gobuilddir}/bin/* %{buildroot}%{_bindir}/
 
 %check
 %go_vendor_license_check -c %{S:2}
-%gocheck
+%gocheck -d internal/gcb/slsaprovenance/v1.0
 
 %files -f %{go_vendor_license_filelist}
 %license vendor/modules.txt
